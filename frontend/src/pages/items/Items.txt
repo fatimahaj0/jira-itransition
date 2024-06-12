@@ -1,0 +1,42 @@
+// Items.jsx
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+
+function Items() {
+    const { collectionId } = useParams();
+    const [items, setItems] = useState([]);
+
+    useEffect(() => {
+        console.log('Fetching items for collection ID:', collectionId);
+        const fetchItems = async () => {
+            try {
+                const response = await fetch(`http://localhost:8081/collection/${collectionId}/items`);
+                if (!response.ok) {
+                    throw new Error('Failed to fetch items');
+                }
+                const data = await response.json();
+                console.log('Fetched items:', data);
+                setItems(data);
+            } catch (error) {
+                console.error('Error fetching items:', error);
+            }
+        };
+
+        fetchItems();
+    }, [collectionId]);
+
+    console.log('Items:', items);
+
+    return (
+        <div className="container">
+            <h2>Items for Collection ID: {collectionId}</h2>
+            <ul>
+                {items.map((item, index) => (
+                    <li key={index}>{item.name}</li>
+                ))}
+            </ul>
+        </div>
+    );
+}
+
+export default Items;

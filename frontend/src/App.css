@@ -1,0 +1,58 @@
+.color-text{color: var(--text-color) !important;}
+.color-bg{background-color: var(--body-color) !important;}
+
+.container{width: 1650px;max-width: 90%;margin: 0 auto;padding: 0 !important}
+
+/* FONT SIZE */
+.fs-60{font-size: 60px;}
+.fs-40 {font-size: 40px;}
+.fs-28 {font-size: 28px;}
+.fs-24 {font-size: 24px;}
+.fs-22{font-size: 22px;}
+.fs-20{font-size: 20px;}
+.fs-18{font-size: 18px;}
+.fs-16{font-size: 16px;}
+.fs-14 {font-size: 14px;}
+
+:root {
+  --body-color: white;
+  --text-color: black;
+}
+
+.dark-mode {
+  --body-color: #333;
+  --text-color: white;
+}
+
+body {
+	background-color: var(--body-color) !important;
+	 color: var(--text-color)!important;
+	 font-family: Arial, sans-serif!important;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.cursor{cursor: pointer;}
+
+@media screen and (max-width:1440px){
+  .fs-22, .fs-20 {font-size: 14px;}
+  .fs-60{font-size: 42px;}
+  .fs-40{font-size: 28px;}
+  .fs-24 {font-size: 18px;}
+  .fs-16{font-size: 14px;}
+}
+
+@media screen and (max-width:1024px){
+  .fs-24 {font-size: 16px;}
+  .fs-22, .fs-20 {font-size: 14px;}
+  .fs-40 {font-size: 24px;}
+}
+
+@media screen and (max-width:767px){
+  .fs-60{font-size: 20px;}
+  .fs-40 {font-size: 22px;}
+  .fs-18{font-size: 16px;}
+}

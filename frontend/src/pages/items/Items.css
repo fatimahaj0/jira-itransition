@@ -1,0 +1,68 @@
+/* Items.css */
+
+.item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.item-actions {
+    margin-top: 10px;
+}
+
+.like-button, .comment-button {
+    padding: 5px 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.like-button i, .comment-button i {
+    margin-right: 5px;
+}
+
+.like-button {
+    color: #dc3545; 
+}
+
+.comment-button {
+    color: #0d6efd; 
+}
+
+
+
+.autocomplete-dropdown {
+  position: absolute;
+  background: white;
+  max-height: 200px; 
+  overflow-y: auto;
+  z-index: 1000;
+  border: 1px solid #ddd;
+  border-top: none;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.autocomplete-dropdown .dropdown-item {
+  cursor: pointer;
+  padding: 8px 12px;
+}
+
+.autocomplete-dropdown .dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+.form-group {
+  position: relative;
+}
+
+.color-bg, .color-text {
+  color: #000; 
+  background-color: #fff; 
+}
+
+.form-control {
+  position: relative;
+  z-index: 1; 
+}

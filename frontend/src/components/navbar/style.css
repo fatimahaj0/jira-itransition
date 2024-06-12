@@ -1,0 +1,51 @@
+.navbar {
+  width: 100%;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 20px 0 !important;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  margin: 0 !important; 
+  padding: 0 !important;
+}
+
+ul li {
+  display: inline-block;
+  margin: 10px 20px;
+  cursor: pointer;
+}
+
+ul li a{text-decoration: none;color: var(--text-color);}
+
+.toggle-container {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  padding: 7px 15px;
+  background: #242424;
+  border-radius: 50px;
+}
+
+.search input {
+  padding: 6px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 12px;
+}
+
+.search input::placeholder {
+  color: #fff;
+}
+.moon-icon {
+  color: #fff;
+}
